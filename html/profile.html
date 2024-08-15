@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Perfil</h1>
+        <div id="profileDetails"></div>
+        <form id="profileForm">
+            <div>
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div>
+                <label for="country">País:</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div>
+                <label for="dob">Fecha de Nacimiento:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div>
+                <label for="profilePicture">Cambiar foto de perfil:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            </div>
+            <img id="profilePicturePreview" src="" alt="Vista previa de la foto de perfil">
+            <button type="submit">Guardar</button>
+        </form>
+        <button onclick="signOut()">Cerrar Sesión</button>
+    </div>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
